@@ -68,7 +68,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
         const product = await api.get(`/products/${productId}`)
         const newProduct = {
           ...product.data,
-          amount: 1,
+          amount
         }
         updatedCart.push(newProduct);
       }
